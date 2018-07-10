@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Regression]">
+  <test name="TestCRM(failed)">
+    <classes>
+      <class name="com.crm.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="crmLogoImageTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="loginPageTitleTest"/>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- com.crm.qa.testcases.LoginPageTest -->
+      <class name="com.crm.qa.testcases.HomePageTest">
+        <methods>
+          <include name="verifyUserNameTest"/>
+          <include name="verifyContactsLinkTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyHomePageTitleTest"/>
+        </methods>
+      </class> <!-- com.crm.qa.testcases.HomePageTest -->
+      <class name="com.crm.qa.testcases.ContactPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="selectMultipleContactsTest"/>
+          <include name="verifyContactsPageLabel"/>
+          <include name="setUp"/>
+          <include name="selectSingleContactsTest"/>
+          <include name="validateCreateNewContact"/>
+        </methods>
+      </class> <!-- com.crm.qa.testcases.ContactPageTest -->
+    </classes>
+  </test> <!-- TestCRM(failed) -->
+</suite> <!-- Failed suite [Regression] -->
